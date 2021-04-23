@@ -7,7 +7,9 @@ This will tell you how to solve `curl: (7) Failed to connect to raw.githubuserco
 
 这是国内墙导致的。
 
-我的解决方案是：这边直接挂一个梯子，然后执行梯子的代码之后，就可以放心安装了。
+## 解决方案一：
+
+这边直接挂一个梯子，然后执行梯子的代码之后，就可以放心安装了。
 
 这边给的是 `clashx` 的例子： 先复制 `shell command` 然后在终端中执行一下之后下载即可。
 
@@ -25,3 +27,11 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 ```shell
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
+
+## 解决方案二：
+`oh-my-zsh` 安装时遇到这个问题，可以直接改变文件中指向的 `git` 仓库从 `github` 移到 `gitee`
+```shell
+sh -c "$(curl -fsSL https://gitee.com/shmhlsy/oh-my-zsh-install.sh/raw/master/install.sh)"
+```
+
+
